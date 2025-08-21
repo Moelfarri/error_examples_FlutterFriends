@@ -7,6 +7,11 @@ void main() async {
   final Either<BLEDeviceInformation, MyBLEGatewayException> either =
       await service.getDeviceInformation();
 
+  final _ = switch (either) {
+    Success(value: final data) => print("Data received: ${data}"),
+    Failure(error: final error) => print("Error occurred: ${error}"),
+  };
+
   either.when(
     (response) {
       print("Data received: ${response}");

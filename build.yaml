@@ -1,0 +1,5 @@
+targets:
+  $default:
+    sources:
+      include:
+        - "*.dart" # include .dart files at root

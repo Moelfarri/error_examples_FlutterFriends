@@ -1,0 +1,8 @@
+name: either_example
+environment:
+  sdk: ^3.8.0
+dependencies:
+  freezed_annotation: ^3.0.0
+dev_dependencies:
+  build_runner: ^2.0.0
+  freezed: ^3.0.0
